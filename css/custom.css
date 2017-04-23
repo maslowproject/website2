@@ -100,15 +100,15 @@ header h3.text-white {
 
 @media only screen and (min-width: 1200px) {
     .background-image-holder.parallax-background {
-        height: 110%;
-        top: 0%;
+        height: 120%;
+        top: -5%;
     }
 }
 
 @media only screen and (min-width: 1600px) {
     .background-image-holder.parallax-background {
-        height: 130%;
-        top: 0%;
+        height: 140%;
+        top: -5%;
     }
 }
 
@@ -125,8 +125,8 @@ header h3.text-white {
     }
 
     .background-image-holder.parallax-background {
-        height: 110%;
-        top: 0%;
+        height: 115%;
+        top: -8%;
     }
 
     header h3.text-white {
