@@ -87,6 +87,17 @@ header h3.text-white {
     }
 }
 
+@media (max-width: 768px) {
+  footer div.row div {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  footer div.row div span, footer div.row div ul {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
     .background-image-holder.parallax-background {
         height: 110%;
