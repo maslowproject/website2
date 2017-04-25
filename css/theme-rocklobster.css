@@ -2,7 +2,7 @@
   background-color: #FF6633 !important;
 }
 .bg-secondary-1 {
-  background-color: #2c3e50 !important;
+  background-color: #222 !important;
 }
 .bg-secondary-2 {
   background-color: #f30 !important;
@@ -273,7 +273,7 @@ section.duplicatable-content {
   padding-bottom: 40px;
 }
 section:nth-of-type(odd) {
-  background: #f4f4f4;
+  background: #e4e4e4;
 }
 section:nth-of-type(even) {
   background: #ffffff;

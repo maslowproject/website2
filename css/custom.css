@@ -54,6 +54,10 @@ header h3.text-white {
         color: #333;   
     }
 
+    :not(.index-header).page-header {
+      padding: 170px 0px;
+    }
+
   @media (min-width: 992px) {
   .index-bottom-cta {
     display: flex;
@@ -156,6 +160,10 @@ header h3.text-white {
     .navbar-nav>li>a {
         width: 80px;
     }
+}
+
+:not(.index-header) .background-image-holder.parallax-background {
+    top: -15%;
 }
 
 .dark-nav {
@@ -400,4 +408,12 @@ section h3.section-subheading {
           padding-right: 20px;
         }
       }
-    
+
+      .ad-row>div>div {
+        padding: 20px 0px;
+      }
+
+      .feature-box.service {
+        padding: 80px 40px 90px 40px;
+        min-height: 200px;
+      }

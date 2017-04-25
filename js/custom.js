@@ -1,7 +1,7 @@
 $(document).ready(function() {
     if ($(window).innerWidth() < 768)
 	{
-		$('.header-background').css('background', 'url("img/header_short.jpg")');
+		$('.index-header .header-background').css('background', 'url("img/header_short.jpg")');
         addBackgroundStyle();
         setShortHeader();		
 	}
@@ -39,14 +39,14 @@ $(window).resize(function() {
 
 	if (this.innerWidth < 768 && oldWidth >= 740)
 	{
-		$('.header-background').css('background', 'url("img/header_short.jpg")');
+		$('.index-header .header-background').css('background', 'url("img/header_short.jpg")');
 	}
 	else if (this.innerWidth >= 768 && oldWidth < 790)
 	{
         $('.background-image-holder.parallax-background').css('height', '110%');  
         $('.background-image-holder.parallax-background').css('width', '100%');  
         $('.background-image-holder.parallax-background').css('left', '0%');
-		$('.header-background').css('background', 'url("img/header.jpg")');
+		$('.index-header .header-background').css('background', 'url("img/header.jpg")');
         
 	}
 
