@@ -16,6 +16,11 @@ $(document).ready(function() {
     {
         $('nav.navbar-default').removeClass('dark-nav');        
     }
+
+    if (!$('header').is(":visible"))
+    {
+        $('nav.index-bar.navbar-default').addClass('dark-nav');
+    }
 });
 
 // Nav Sticky
@@ -30,6 +35,11 @@ $(window).scroll(function(){
     if ($('.navbar-toggle').is(":visible"))
     {
         $('nav.navbar-default').removeClass('dark-nav');        
+    }
+
+    if (!$('header').is(":visible"))
+    {
+        $('nav.index-bar.navbar-default').addClass('dark-nav');
     }
 });
 

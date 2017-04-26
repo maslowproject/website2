@@ -10,6 +10,9 @@
 .bg-white {
   background-color: #fff !important;
 }
+.bg-steel {
+  background-color: #e4e4e4 !important;
+}
 .bg-dribbble {
   background-color: #ea4c89;
 }
@@ -273,7 +276,7 @@ section.duplicatable-content {
   padding-bottom: 40px;
 }
 section:nth-of-type(odd) {
-  background: #e4e4e4;
+  background: #f4f4f4;
 }
 section:nth-of-type(even) {
   background: #ffffff;
@@ -1122,7 +1125,7 @@ header.fullscreen-element .overlay:before,
 .feature-icon-large .pull-right {
   width: 75%;
 }
-.feature-icon-large .pull-left .icon {
+.feature-icon-large .pull-left .icon, .feature-icon-large .pull-left .fa {
   border: none;
   width: auto;
   font-size: 48px;
@@ -2898,6 +2901,14 @@ footer.short-2 .contact-action:hover {
   .no-align-mobile {
     padding-top: 0px !important;
     margin-top: 24px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
   }
   h1 {
     font-size: 24px;

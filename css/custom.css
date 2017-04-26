@@ -55,7 +55,7 @@ header h3.text-white {
     }
 
     :not(.index-header).page-header {
-      padding: 170px 0px;
+      padding: 160px 0px 90px 0px;
     }
 
   @media (min-width: 992px) {
@@ -168,7 +168,7 @@ header h3.text-white {
     padding: 18px 15px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a, .navbar-nav .open .dropdown-menu>li>a  {
     color: #fff !important;
 }
 
@@ -181,15 +181,15 @@ header h3.text-white {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #f30;
 }
-}
-
-:not(.index-header) .background-image-holder.parallax-background {
-    top: -15%;
-}
 
 .navbar-default {
   background-color: rgb(20, 20, 20);
     border-color: rgb(30, 30, 30);
+}
+}
+
+:not(.index-header) .background-image-holder.parallax-background {
+    top: -15%;
 }
 
 .dark-nav {
@@ -439,7 +439,65 @@ section h3.section-subheading {
         padding: 20px 0px;
       }
 
+      .be-a-pal h3 {
+        font-size: 24px;
+      }
+
+      @media (min-width: 991px) and (max-width: 1330px) {
+        .be-a-pal h3 {
+        font-size: 17px;
+      }
+      }
+
       .feature-box.service {
         padding: 80px 40px 90px 40px;
         min-height: 200px;
       }
+
+      .trucke-pals h4, .trucke-pals h1, .trucke-pals img {
+        margin-bottom: 15px;
+      }
+
+      .trucke-pals img {
+        filter: brightness(85%);
+        width: 400px;        
+      }
+
+      .trucke-pals p,{
+        max-width: 100%;
+      }
+
+      .trucke-pals .row div {
+        padding: 20px 15px;
+      }
+
+      div.question {
+        margin-bottom: 40px;
+      }
+
+      ul.faq {
+        padding-left: 20px;
+      }
+
+      ul.square {
+        list-style-type: square;
+      }
+
+.inline-image-right ul span {
+    float: left;
+    margin: -3px 10px 0 0;
+    background: #232120;
+    color: #fff;
+    padding: 3px 10px 3px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inline-image-right h2 {
+  margin-bottom: 20px;
+}
+
+.inline-image-right ul li {
+  margin-bottom: 15px;
+}
