@@ -37,6 +37,11 @@ var oldWidth = $(window).innerWidth;
 
 $(window).resize(function() {
 
+    if ($('.navbar-toggle').is(":visible"))
+    {
+        $('nav.navbar-default').removeClass('dark-nav');        
+    }
+
 	if (this.innerWidth < 768 && oldWidth >= 740)
 	{
 		$('.index-header .header-background').css('background', 'url("img/header_short.jpg")');

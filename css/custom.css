@@ -160,10 +160,36 @@ header h3.text-white {
     .navbar-nav>li>a {
         width: 80px;
     }
+
+    .navbar-brand {
+    color: #f30 !important;
+    font-family: "Gochi Hand","Helvetica Neue",Helvetica,Arial,cursive;
+    font-size: 32px;
+    padding: 18px 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f30;
+    border-width: 2px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f30;
+}
 }
 
 :not(.index-header) .background-image-holder.parallax-background {
     top: -15%;
+}
+
+.navbar-default {
+  background-color: rgb(20, 20, 20);
+    border-color: rgb(30, 30, 30);
 }
 
 .dark-nav {
