@@ -139,6 +139,9 @@ header h3.text-white {
 }
 
 @media only screen and (max-width: 767px) {
+  .main-container {
+    padding-top: 50px;
+  }
     .navbar-brand-desktop {
         display: none;
     }
