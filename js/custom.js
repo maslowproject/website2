@@ -58,9 +58,9 @@ $(window).resize(function() {
 	}
 	else if (this.innerWidth >= 768 && oldWidth < 790)
 	{
-        $('.background-image-holder.parallax-background').css('height', '110%');  
-        $('.background-image-holder.parallax-background').css('width', '100%');  
-        $('.background-image-holder.parallax-background').css('left', '0%');
+        $('.background-image-holder.parallax-background:not(.cities)').css('height', '110%');  
+        $('.background-image-holder.parallax-background:not(.cities)').css('width', '100%');  
+        $('.background-image-holder.parallax-background:not(.cities)').css('left', '0%');
 		$('.index-header .header-background').css('background', 'url("img/header.jpg")');
         
 	}
@@ -80,9 +80,9 @@ function setShortHeader() {
     var height = gradientCalc(currentWidth, 'height');
     var width = gradientCalc(currentWidth, 'width');
     var left = gradientCalc(currentWidth, 'left');
-    $('.background-image-holder.parallax-background').css('height', height + '%');  
-    $('.background-image-holder.parallax-background').css('width', width + '%');  
-    $('.background-image-holder.parallax-background').css('left', left + '%');
+    $('.background-image-holder.parallax-background:not(.cities)').css('height', height + '%');  
+    $('.background-image-holder.parallax-background:not(.cities)').css('width', width + '%');  
+    $('.background-image-holder.parallax-background:not(.cities)').css('left', left + '%');
 }
 
 function addBackgroundStyle() {

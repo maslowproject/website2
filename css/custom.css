@@ -457,6 +457,24 @@ section h3.section-subheading {
         min-height: 200px;
       }
 
+      .feature-box.cities h3 {
+        margin-bottom: 150px;
+      }
+
+      @media (min-width: 910px) {
+        .feature-box.cities .background-image-holder {
+          height: 160%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .background-image-holder.parallax-background.cities {
+          width: 160%;
+          left: -28%;
+          top: -18%;
+        }
+      }
+
       .trucke-pals h4, .trucke-pals h1, .trucke-pals img {
         margin-bottom: 15px;
       }
@@ -464,6 +482,22 @@ section h3.section-subheading {
       .trucke-pals img {
         filter: brightness(85%);
         width: 400px;        
+      }
+
+      div.the-map {
+        position: relative;
+      }
+
+      img.us-map {
+        width: 700px;
+        height: 400px;
+      }
+
+      img.map-spot {
+        position: absolute;
+        width: 45px;
+        right: 575px;
+        top: 300px;
       }
 
       .trucke-pals p,{
