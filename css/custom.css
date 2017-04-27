@@ -500,6 +500,18 @@ section h3.section-subheading {
         top: 300px;
       }
 
+      @media (max-width: 1200px) {
+        img.map-spot {
+          right: 478px;
+        }
+      }
+
+      @media (max-width: 991px) {
+        img.map-spot {
+          right: 365px;
+        }
+      }
+
       .trucke-pals p,{
         max-width: 100%;
       }
