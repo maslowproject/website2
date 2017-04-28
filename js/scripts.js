@@ -151,7 +151,7 @@ $(document).ready(function(){
     	$(this).children('img').hide();        
 	});
 
-	$('.page-header .background-image-holder').each(function(){
+	$('.page-header .background-image-holder, .gallery-holder .background-image-holder').each(function(){
         $(this).css('background-position', 'top center');
         $(this).css('background-repeat', 'no-repeat');
 	});
