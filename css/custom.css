@@ -57,6 +57,14 @@ header h3.text-white {
   .index-bottom-cta .middle-button {
     bottom: 1vw;
   }
+
+  .index-bottom-cta div.inner h1 {
+  font-size: 42px;
+}
+}
+
+.index-bottom-cta div.inner {
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -64,6 +72,10 @@ header h3.text-white {
     bottom: 1vw;
   }
 }
+
+.index-bottom-cta .feature-box {
+  min-height: 240px;
+  }
 
 .index-bottom-cta .middle-button {
     position: absolute;
@@ -308,6 +320,12 @@ header h3.text-white {
   margin: 0 0 15px;
   right: 0;
 }
+
+#portfolio .portfolio-item .portfolio-link:hover, #portfolio .portfolio-item .portfolio-link:focus {
+  outline: none;
+  text-decoration: initial;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
