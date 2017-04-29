@@ -5,10 +5,14 @@ $(document).ready(function() {
         addBackgroundStyle();
         setShortHeader();		
 	}
+    
+    darkNavHandle();
+});
 
+function darkNavHandle() {
     if($(window).scrollTop() > 375 && !$('.navbar-toggle').is(":visible")){
         $('nav.index-bar.navbar-default').addClass('dark-nav');
-    }else{
+    }else if ($('header').is(":visible")){
         $('nav.index-bar.navbar-default').removeClass('dark-nav');
     }
 
@@ -16,32 +20,10 @@ $(document).ready(function() {
     {
         $('nav.navbar-default').removeClass('dark-nav');        
     }
-
-    if (!$('header').is(":visible"))
-    {
-        $('nav.index-bar.navbar-default').addClass('dark-nav');
-    }
-});
-
+}
 // Nav Sticky
 
-$(window).scroll(function(){
-    if($(window).scrollTop() > 375 && !$('.navbar-toggle').is(":visible")){
-        $('nav.index-bar.navbar-default').addClass('dark-nav');
-    }else{
-        $('nav.index-bar.navbar-default').removeClass('dark-nav');
-    }
-
-    if ($('.navbar-toggle').is(":visible"))
-    {
-        $('nav.navbar-default').removeClass('dark-nav');        
-    }
-
-    if (!$('header').is(":visible"))
-    {
-        $('nav.index-bar.navbar-default').addClass('dark-nav');
-    }
-});
+$(window).scroll(darkNavHandle);
 
 var oldWidth = $(window).innerWidth;
 
