@@ -41,19 +41,6 @@ header h3.text-white {
     margin-bottom: 40px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-        color: #f30;
-    }
-
-    .navbar-nav>li>a.btn {
-        color: white;
-    }
-
-    .navbar-nav>li>a.btn:hover {
-        background-color: #f30;
-        color: #333;   
-    }
-
     :not(.index-header).page-header {
       padding: 160px 0px 90px 0px;
     }
@@ -123,6 +110,19 @@ header h3.text-white {
   display: flex;
   height: 450px;
 }
+
+.navbar-default .navbar-nav>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+        color: #f30;
+    }
+
+    .navbar-nav>li>a.btn {
+        color: white;
+    }
+
+    .navbar-nav>li>a.btn:hover {
+        background-color: #f30;
+        color: #333;   
+    }
 
 .col {
   flex: 1;
