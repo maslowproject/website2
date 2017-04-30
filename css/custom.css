@@ -54,14 +54,14 @@ header h3.text-white {
     flex: 1;
   }
 
-  .index-bottom-cta .middle-button {
-    bottom: 4vw;
-  }
-
   .index-bottom-cta div.inner h1 {
   font-size: 42px;
 }
 }
+
+.middle-button a.btn {
+    margin-top: 16px;
+  }
 
 .index-bottom-cta div.inner {
   width: 100%;
@@ -71,17 +71,7 @@ header h3.text-white {
   min-height: 280px;
   }
 
-.index-bottom-cta .middle-button {
-    position: absolute;
-    z-index: 1;
-  }
-
 @media (max-width: 991px) {
-  .index-bottom-cta .middle-button {
-    bottom: 3vw;
-    width: 100%;
-  }
-
   .index-bottom-cta .feature-box {
   min-height: 220px;
   }
@@ -453,6 +443,7 @@ section h3.section-subheading {
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em;
+  line-height: 42px;
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
