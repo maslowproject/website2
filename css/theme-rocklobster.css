@@ -1370,12 +1370,16 @@ img.phone-portrait {
   height: 100%;
   background-size: cover !important;
   z-index: 0;
-  background-position: 50% 50% !important;
+}
+.background-image-holder:not(.customer-faq),
+.foreground-image-holder {
+  background-position: 50% 50% !important;  
 }
 .background-image-holder.parallax-background {
   height: 120%;
   top: -10%;
 }
+
 .hover-background .background-image-holder,
 .hover-background .foreground-image-holder {
   transition: all 0.3s ease-out;

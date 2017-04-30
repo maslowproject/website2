@@ -68,7 +68,7 @@ function setShortHeader() {
 }
 
 function addBackgroundStyle() {
-    $('.header-background').css('background-position', 'top center');
+    $('.header-background:not(.customer-faq)').css('background-position', 'top center');
     $('.header-background').css('background-repeat', 'no-repeat');
 }
 

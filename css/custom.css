@@ -674,3 +674,15 @@ section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
 .get-pricing {
   margin-bottom: 20px;
 }
+
+.service-line p.rightalign {
+  position: absolute;
+  right: 12px;
+  bottom: -38px;
+}
+
+@media (max-width: 768px) {
+.service-line p.rightalign {
+  bottom: -4px;
+}
+}

@@ -160,6 +160,11 @@ $(document).ready(function(){
         $(this).css('background-position', '50% 80%');
         $(this).css('background-repeat', 'no-repeat');
 	});
+
+	$('.background-image-holder.customer-faq').each(function(){
+        $(this).css('background-position', '50% 32%');
+        $(this).css('background-repeat', 'no-repeat');
+	});
 	// Accordion
 
 	$('.accordion li').click(function(){
