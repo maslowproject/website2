@@ -67,12 +67,6 @@ header h3.text-white {
   width: 100%;
 }
 
-@media (max-width: 991px) {
-  .index-bottom-cta .middle-button {
-    bottom: 1vw;
-  }
-}
-
 .index-bottom-cta .feature-box {
   min-height: 280px;
   }
@@ -81,6 +75,17 @@ header h3.text-white {
     position: absolute;
     z-index: 1;
   }
+
+@media (max-width: 991px) {
+  .index-bottom-cta .middle-button {
+    bottom: 3vw;
+    width: 100%;
+  }
+
+  .index-bottom-cta .feature-box {
+  min-height: 220px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
 
