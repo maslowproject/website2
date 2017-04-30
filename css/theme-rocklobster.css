@@ -4,6 +4,9 @@
 .bg-secondary-1 {
   background-color: #222 !important;
 }
+.bg-black {
+  background-color: black !important;
+}
 .bg-secondary-2 {
   background-color: #f30 !important;
 }
@@ -2783,7 +2786,7 @@ footer.short-2 .contact-action {
   right: 0px;
   height: 100%;
   width: 25%;
-  background: #f30;
+  background:black;
   z-index: 3;
   top: 0;
   text-align: center;
