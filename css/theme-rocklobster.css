@@ -281,10 +281,10 @@ section.pad-large {
 section.duplicatable-content {
   padding-bottom: 40px;
 }
-section:nth-of-type(odd) {
+section:nth-of-type(even) {
   background: #f4f4f4;
 }
-section:nth-of-type(even) {
+section:nth-of-type(odd) {
   background: #ffffff;
 }
 .no-pad {

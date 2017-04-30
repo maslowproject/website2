@@ -653,3 +653,7 @@ section h3.section-subheading {
 .inline-image-right ul li {
   margin-bottom: 15px;
 }
+
+section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
+  background: #f4f4f4;
+}
