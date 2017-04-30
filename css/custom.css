@@ -155,7 +155,6 @@ header h3.text-white {
 .flex-grid img {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%;
 }
 
 .flex-grid>.col img {
@@ -170,7 +169,7 @@ header h3.text-white {
 }
 
 .flex-grid>.col {
-  height: auto;
+  height: inherit;
   display: inline-block;
 }
 }
