@@ -668,4 +668,10 @@ section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
 
 .service-line .feature-box {
   padding-top: 0px;
+  padding-bottom: 40px;
+  min-height: 360px;
+}
+
+.get-pricing {
+  margin-bottom: 20px;
 }
