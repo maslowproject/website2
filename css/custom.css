@@ -661,3 +661,11 @@ section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
 .orange-text {
   color: #f30;
 }
+
+.service-line {
+  padding-top: 40px;
+}
+
+.service-line .feature-box {
+  padding-top: 0px;
+}
