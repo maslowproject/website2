@@ -1262,6 +1262,9 @@ img.phone-portrait {
 .feature-box .btn {
   margin-top: 24px;
 }
+.feature-box.service .btn {
+  margin-top: 68px;
+}
 .feature-box .inner {
   width: 66.66666%;
   position: relative;
@@ -1371,9 +1374,14 @@ img.phone-portrait {
   background-size: cover !important;
   z-index: 0;
 }
-.background-image-holder:not(.customer-faq),
+:not(.service) .background-image-holder:not(.customer-faq),
 .foreground-image-holder {
   background-position: 50% 50% !important;  
+}
+
+.service .background-image-holder:not(.customer-faq)
+{
+  background-position: 50% 53% !important;  
 }
 .background-image-holder.parallax-background {
   height: 120%;
