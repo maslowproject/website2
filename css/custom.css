@@ -657,3 +657,7 @@ section h3.section-subheading {
 section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
   background: #f4f4f4;
 }
+
+.orange-text {
+  color: #f30;
+}
