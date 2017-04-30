@@ -276,7 +276,7 @@ header h3.text-white {
     }
 
     .navbar-brand {
-    color: #f30 !important;
+    color: white !important;
     font-family: "Gochi Hand","Helvetica Neue",Helvetica,Arial,cursive;
     font-size: 28px;
     padding: 18px 15px;
@@ -287,13 +287,7 @@ header h3.text-white {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #f30;
     border-width: 2px;
-
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #f30;
 }
 
 .navbar-default {
