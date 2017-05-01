@@ -337,18 +337,10 @@ $(document).ready(function(){
                 type: "POST",
                 url: "https://hg1g2g009e.execute-api.us-east-1.amazonaws.com/prod/",
                 data: JSON.stringify(formData),
-                success: function (response) {
+                error: function (response) {
+                	$(thisForm).find('.form-loading').remove();					
 					thisForm.find('.form-success').fadeIn(1000);
 					thisForm.find('.form-success').text(response.message).fadeIn(1000);
-                },
-                error: function (errorObject, errorText, errorHTTP) {
-                	// Keep the current error text in a data attribute on the form
-					thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
-					// Show the error with the returned error text.
-					thisForm.find('.form-error').text(errorHTTP).fadeIn(1000);
-					thisForm.find('.form-success').fadeOut(1000);
-                	$(thisForm).find('.form-loading').remove();
-					$(thisForm).find('input[type="submit"]').show();
                 }
             });
         }
