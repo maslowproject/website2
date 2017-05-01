@@ -326,30 +326,20 @@ $(document).ready(function(){
 			loadingSpinner = $('<div />').addClass('form-loading').insertAfter($(thisForm).find('input[type="submit"]'));
 			$(thisForm).find('input[type="submit"]').hide();
 
-            jQuery.ajax({
+			var formData = {
+				name: $("input[name='name']").val(),
+				message: $("textarea[name='message']").val(),
+				email: $("input[name='email']").val(),
+				subject: $("input[name='subject']").val()
+			};
+
+            $.ajax({
                 type: "POST",
-                url: "mail/mail.php",
-                data: thisForm.serialize(),
+                url: "https://hg1g2g009e.execute-api.us-east-1.amazonaws.com/prod/",
+                data: JSON.stringify(formData),
                 success: function (response) {
-                	// Swiftmailer always sends back a number representing numner of emails sent.
-					// If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
-					$(thisForm).find('.form-loading').remove();
-					$(thisForm).find('input[type="submit"]').show();
-					if($.isNumeric(response)){
-						if(parseInt(response) > 0){
-							thisForm.find('.form-success').fadeIn(1000);
-							thisForm.find('.form-error').fadeOut(1000);
-							setTimeout(function(){ thisForm.find('.form-success').fadeOut(500); }, 5000);
-						}
-					}
-					// If error text was returned, put the text in the .form-error div and show it.
-					else{
-						// Keep the current error text in a data attribute on the form
-						thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
-						// Show the error with the returned error text.
-						thisForm.find('.form-error').text(response).fadeIn(1000);
-						thisForm.find('.form-success').fadeOut(1000);
-					}
+					thisForm.find('.form-success').fadeIn(1000);
+					thisForm.find('.form-success').text(response.message).fadeIn(1000);
                 },
                 error: function (errorObject, errorText, errorHTTP) {
                 	// Keep the current error text in a data attribute on the form
