@@ -686,3 +686,13 @@ section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
   bottom: -4px;
 }
 }
+
+.article-body p.price-faq {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+p.contact-intro {
+  font-size: 18px;
+}

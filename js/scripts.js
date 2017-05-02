@@ -341,7 +341,12 @@ $(document).ready(function(){
                 	$(thisForm).find('.form-loading').remove();					
 					thisForm.find('.form-success').fadeIn(1000);
 					thisForm.find('.form-success').text(response.message).fadeIn(1000);
-                }
+                },
+				success: function (response) {
+					$(thisForm).find('.form-loading').remove();					
+					thisForm.find('.form-success').fadeIn(1000);
+					thisForm.find('.form-success').text(response.message).fadeIn(1000);
+				}
             });
         }
 		return false;
