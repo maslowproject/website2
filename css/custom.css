@@ -681,6 +681,10 @@ section.contact-thirds, section.trucke-pals, section.trucke-pals-2 {
   bottom: -38px;
 }
 
+.service-line img {
+  max-width: 350px;
+}
+
 @media (max-width: 768px) {
 .service-line p.rightalign {
   bottom: -4px;
