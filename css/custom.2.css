@@ -704,3 +704,15 @@ p.contact-intro {
 div.terms {
   margin-top: 35px;
 }
+
+a.navbar-brand-desktop img {
+  max-width: 131px;
+}
+
+.trucke-pals-2 img.product-image {
+  max-width: 330px;
+}
+
+body {
+  background-color: #222;
+}
