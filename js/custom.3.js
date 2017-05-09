@@ -16,6 +16,7 @@ $(document).ready(function() {
     if (/*cc_on!@*/false || !!document.documentMode) //ie
     {
         $('.about-us-pics').css('display', 'none');        
+        $('.about-us-nav').addClass('dark-nav');        
     }
 });
 
