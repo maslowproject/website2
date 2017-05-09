@@ -1,3 +1,5 @@
+var isIE = /*cc_on!@*/false || !!document.documentMode;
+
 $(document).ready(function() {
     if ($(window).innerWidth() < 768)
 	{
@@ -13,7 +15,7 @@ $(document).ready(function() {
         $('.map-holder').css('display', 'none');
     }
 
-    if (/*cc_on!@*/false || !!document.documentMode) //ie
+    if (isIE) //ie
     {
         $('.about-us-pics').css('display', 'none');        
         $('.about-us-nav').addClass('dark-nav');        
@@ -23,7 +25,7 @@ $(document).ready(function() {
 function darkNavHandle() {
     if($(window).scrollTop() > 375 && !$('.navbar-toggle').is(":visible")){
         $('nav.index-bar.navbar-default').addClass('dark-nav');
-    }else if ($('header').is(":visible")){
+    }else if ($('header').is(":visible") && !($('.about-us-nav').is(":visible") && isIE)){
         $('nav.index-bar.navbar-default').removeClass('dark-nav');
     }
 
