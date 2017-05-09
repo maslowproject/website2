@@ -7,6 +7,16 @@ $(document).ready(function() {
 	}
     
     darkNavHandle();
+
+    if (typeof InstallTrigger !== 'undefined') //firefox
+    {
+        $('.map-holder').css('display', 'none');
+    }
+
+    if (/*cc_on!@*/false || !!document.documentMode) //ie
+    {
+        $('.about-us-pics').css('display', 'none');        
+    }
 });
 
 function darkNavHandle() {
