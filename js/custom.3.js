@@ -18,7 +18,8 @@ $(document).ready(function() {
     if (isIE) //ie
     {
         $('.about-us-pics').css('display', 'none');        
-        $('.about-us-nav').addClass('dark-nav');        
+        $('.about-us-nav').addClass('dark-nav');
+        $('#portfolio .portfolio-item').css('display', 'block');        
     }
 });
 
